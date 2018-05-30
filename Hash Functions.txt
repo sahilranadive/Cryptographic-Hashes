@@ -1,0 +1,26 @@
+#Brief write up on Cryptographic Hash Functions
+
+1. Hash functions in cryptography are basically mathematical functions.
+2. Inputs given to these functions are converted into some value based upon the
+function given. These are called hash values or digest.
+3. The length of hash values or digests is generally fixed at some value between
+128 at 512 bits usually.
+4. The length of the input may vary but the length of the output given by Hash
+functions is always fixed.
+5. eg: The password taken in by say Gmail are not stored as the alphanumeric
+characters in the password itself. Rather the passwords are hashed using some
+some hash function and this hash function is stored by Gmail.
+6. Some properties of a good hash function:
+  a. No two inputs must have the same value as their digest/hash values.
+  b. One should not be able to predict the input from a given hash value/digest.
+7. The general procedure used by hash functions is as follows:
+  a. Assume a 10 bit long message. A hash function takes two bits at a time and
+  computes the hash value(length of which is always the same. refer point 3) for
+  these two.
+  b. Step 1 takes the first bit of the message and a seed value(provided by user)
+  and finds the hash value for these.
+  c. Step 2 takes the hash value from Step 1 and the second bit of the message
+  and uses these as inputs to output a hash values
+  d. This process continues till all the 10 bits from the message are encoded.
+
+  ******************************************************************************
