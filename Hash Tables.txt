@@ -1,0 +1,13 @@
+#Brief write up on hash tables linked with linked lists
+1. Hash Tables are a data structure used to store hash values.
+2. Assume an array of linked lists. These linked lists are initially empty.
+3. When a hash function associated with this table produces a hash value, it
+searches for a place in the table corresponding to its hash value. In a
+collision free hash table it should find that its spot n the hash table is free.
+4. At this point it creates a node in the linked list at its spot in the array
+and places the hash value there.
+5. In case a node already exists at this spot then it creates another node in
+the linked list stored here and adds this new entry to that point. This table
+some other information in the node as well.
+6. eg: Consider a Gmail account, the username and the hash for the password
+could be stored at one location in the hash table.
