@@ -1,0 +1,4 @@
+The code uses a very simple hash function i.e. "and" operation to encrypt strings.
+The code uses the hash output of the previous character in the string as seed to hash the next character.
+Simply it uses 8 bit fixed encryption which although not secure, represents the principle of working of encryption algorithms.
+Use hash table to store values in hash_table.cpp.
